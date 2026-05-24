@@ -126,21 +126,21 @@
                     
                     <!-- Countdown Display -->
                     <div class="grid grid-cols-4 gap-2 sm:gap-4 max-w-md mx-auto pt-2">
-                        <div class="bg-leaf-950/60 rounded-xl p-3 border border-leaf-700/20">
-                            <span id="cd-days" class="block text-xl sm:text-3xl font-bold text-white">00</span>
-                            <span class="text-[10px] text-emerald-300 font-medium uppercase tracking-wider">Hari</span>
+                        <div class="bg-white rounded-xl p-3 border border-red-200/60 shadow-lg">
+                            <span id="cd-days" class="block text-xl sm:text-3xl font-extrabold text-red-600">00</span>
+                            <span class="text-[10px] text-red-500 font-bold uppercase tracking-wider">Hari</span>
                         </div>
-                        <div class="bg-leaf-950/60 rounded-xl p-3 border border-leaf-700/20">
-                            <span id="cd-hours" class="block text-xl sm:text-3xl font-bold text-white">00</span>
-                            <span class="text-[10px] text-emerald-300 font-medium uppercase tracking-wider">Jam</span>
+                        <div class="bg-white rounded-xl p-3 border border-red-200/60 shadow-lg">
+                            <span id="cd-hours" class="block text-xl sm:text-3xl font-extrabold text-red-600">00</span>
+                            <span class="text-[10px] text-red-500 font-bold uppercase tracking-wider">Jam</span>
                         </div>
-                        <div class="bg-leaf-950/60 rounded-xl p-3 border border-leaf-700/20">
-                            <span id="cd-mins" class="block text-xl sm:text-3xl font-bold text-white">00</span>
-                            <span class="text-[10px] text-emerald-300 font-medium uppercase tracking-wider">Menit</span>
+                        <div class="bg-white rounded-xl p-3 border border-red-200/60 shadow-lg">
+                            <span id="cd-mins" class="block text-xl sm:text-3xl font-extrabold text-red-600">00</span>
+                            <span class="text-[10px] text-red-500 font-bold uppercase tracking-wider">Menit</span>
                         </div>
-                        <div class="bg-leaf-950/60 rounded-xl p-3 border border-leaf-700/20">
-                            <span id="cd-secs" class="block text-xl sm:text-3xl font-bold text-emerald-400">00</span>
-                            <span class="text-[10px] text-emerald-300 font-medium uppercase tracking-wider">Detik</span>
+                        <div class="bg-white rounded-xl p-3 border border-red-200/60 shadow-lg">
+                            <span id="cd-secs" class="block text-xl sm:text-3xl font-extrabold text-red-600">00</span>
+                            <span class="text-[10px] text-red-500 font-bold uppercase tracking-wider">Detik</span>
                         </div>
                     </div>
                 </div>
@@ -365,7 +365,7 @@
     <!-- CLIENT SCRIPT LOGIC -->
     <script>
         // Official Target Launch Date: 2 Juni 2026 pukul 13:00 WITA
-        const TARGET_DATE_ISO = "2026-06-02T13:08:00+08:00";
+        const TARGET_DATE_ISO = "2026-06-02T13:00:00+08:00";
         const targetTime = new Date(TARGET_DATE_ISO).getTime();
         let countdownInterval = null;
 
@@ -482,12 +482,12 @@
         function loadFallbackDatabase() {
             activeDatabase = [
                 {
-                    nisn: "0111847018",
-                    nama: "AHMAD RAFATUL IBRAHIM",
-                    nis: "23001",
+                    nisn: "0098765432",
+                    nama: "BUDI SANTOSO",
+                    nis: "252601",
                     gender: "LAKI-LAKI",
-                    dob: "2011-05-08",
-                    parent: "M. SIHE",
+                    dob: "2011-05-12",
+                    parent: "JOKO SANTOSO",
                     status: "LULUS"
                 },
                 {
